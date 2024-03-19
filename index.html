@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- my fonts installation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- my icons installation -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <title>Creating A Landing Page</title>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76b9a339-12b4-4694-8a03-1064b46dc309/df2kdth-dbe6b3f1-1845-4b49-a36d-f95be97b0d8a.jpg/v1/fill/w_800,h_560,q_75,strp/duel_of_the_fates_by_kuliszu_df2kdth-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYwIiwicGF0aCI6IlwvZlwvNzZiOWEzMzktMTJiNC00Njk0LThhMDMtMTA2NGI0NmRjMzA5XC9kZjJrZHRoLWRiZTZiM2YxLTE4NDUtNGI0OS1hMzZkLWY5NWJlOTdiMGQ4YS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.M5kIOLQ93m956YXLFgUkbtT9WD0K0oq9toUgKwyEC9Y"
+            alt="Duel-of-the-Fates-img-from-devianart-kuliszu"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#our-demo">Our Demo</a></li>
+            <li><a class="nav-link" href="#sabers">Sabers</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="our-demo">
+        <h2>Our Demo</h2>
+        <iframe
+          id="video"
+          width="400"
+          height="315"
+          src="https://www.youtube.com/embed/qo__6MZIg6U?si=rSksCecK6x4KwFcU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <p id="footnote">
+          This is a demo only. And have nothing to do with the sales of real
+          lightsabers
+        </p>
+      </section>
+
+      <section id="hero">
+        <h2>Join the Force or the Darkside :</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="CHOOSE YOUR PATH"
+            required=""
+          />
+          <input id="submit" type="submit" value="Send" class="btn" />
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="sabers">
+          <div class="grid">
+            <div class="icon green"><i class="bi bi-globe-americas"></i></div>
+            <div class="desc">
+              <h2>Green Light Saber</h2>
+              <p>
+                The verdant glow of the green lightsaber guides its wielder
+                along the path of harmony and growth within the Force.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="icon blue"><i class="bi bi-droplet"></i></div>
+            <div class="desc blue">
+              <h2>Blue Light Saber</h2>
+              <p>
+                Bathed in the azure brilliance, the blue lightsaber represents
+                loyalty, justice, and the serene currents of the Force.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon red">
+              <i class="bi bi-fire"></i>
+            </div>
+            <div class="desc red">
+              <h2>Red Light Saber</h2>
+              <p>
+                Igniting with a fierce crimson blaze, the red lightsaber
+                symbolizes power, passion, and the relentless pursuit of
+                dominance through the dark side of the Force.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="pricing">
+          <div class="product" id="green">
+            <div class="level">Green Light Saber</div>
+            <h2>$100</h2>
+          </div>
+          <div class="product" id="blue">
+            <div class="level">Blue Light Saber</div>
+            <h2>$100</h2>
+          </div>
+          <div class="product" id="red">
+            <div class="level">Red Light Saber</div>
+            <h2>$100</h2>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
